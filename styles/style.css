@@ -46,16 +46,21 @@ header {
 }
 
 nav {
+    display: flex;
     margin: 119px auto 0;
     width: fit-content;
 }
 
 .nav {
-    display: inline-block;
-    min-width: 1120px;
+    display: flex;
+    /* max-width: 1120px; */
+    max-width: inherit;
     min-height: 123px;
     background-color: #f8f8f8;
-    /* margin: 0 auto;*/
+    align-items: center;
+    justify-content: center;
+    padding: 0px 102px 0;
+    box-sizing: content-box;
 }
 
 .nav-db {
@@ -65,15 +70,19 @@ nav {
 
 .nav-logo {
     display: inline-block;
-    background-image: url(/img/Logo.png);
+    background-image: url(/img/Logo.png) ;
 }
 
-.nav-logo img {
-    width: 25%;
+nav img {
+    width: 87px;
 }
 
 .nav-menu {
     display: inline-block;
+    max-width: 691px;
+    /* margin: 0 91px; */
+    margin-left: 79px;
+    margin-right: 47px;
 }
 
 ul {
@@ -85,10 +94,24 @@ ul {
 li  {
     float: left;
     font-size: 16px;
-    margin: 20px;
+    margin: 0 5px;
 }
 
+.nav-block {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
 
+.nav-search {
+    display: inline-block;
+    width: 162px;
+    height: 28px;
+    border: solid 2px #c2c2c2;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+}
 
 
 /*.nav::after {
